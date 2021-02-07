@@ -1,51 +1,88 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: Rubik;
+    color: #f0f0f0;
 }
-html{
-    font-size: 10px;
-    font-family: 'Rubik', sans-serif;
+body {
+    background-color: rgb(37, 38, 39);
 }
-body{
-    background-color: rgb(37,38,39);
-    color: white;
+h1 {
+    font-size: 5vmax;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5em;
 }
-section{
-    min-height: 100vh;
-    width: 500px;
-    padding: 100px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-}
-.container{
-    width: 90%;
-    max-width: 500px;
-    margin: 0 auto;
-    background-color: rgb(51,55,59);
-    border-radius: 8px;
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-
-}
-.container p{
-    font-size: 2rem;
+p {
+    font-size: 2vmax;
     font-weight: 300;
-    line-height: 3rem;
-    text-align: justify;
+    line-height: 6vmin;
+    text-align: left;
+    padding: 0.5em;
 }
-button{
-    margin-top: 4rem;
+button {
+    margin-top: auto;
     width: fit-content;
-    padding: 2rem;
-    background-color: rgb(25,28,29);
-    color: white;
+    font-size: 3vmin;
+    padding: 0.8em;
+    background-color: rgb(30, 32, 34);
     border: none;
     border-radius: 8px;
     cursor: pointer;
     align-self: flex-end;
+    box-shadow: 0 0 15px -1px #2c2b2b;
+}
+hr {
+    height: 0.1px;
+    width: 70%;
+    margin: auto;
+    border: none;
+    background-color: rgb(78, 80, 80);
+}
+footer {
+    position: absolute;
+    margin-top: auto;
+    width: 100%;
+    height: 80px;
+    bottom: 0px;
+}
+
+.joke-body {
+    height: fit-content;
+    padding-top: 18vh;
+}
+
+.joke-container {
+    width: 50vmax;
+    height: fit-content;
+    margin: auto;
+    background-color: rgb(69, 70, 71);
+    border-radius: 8px;
+    padding: 3vmin;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px -1px #1f1c1c;
+}
+.footer-text {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    text-align: center;
+    font-weight: 200;
+    color: rgb(78, 80, 80);
+}
+
+@media (max-width: 1000px) {
+    .joke-body {
+        padding-top: 25vmin;
+    }
+}
+
+@media (max-width: 600px) {
+    .joke-body {
+        padding-top: 35vmax;
+    }
 }
